@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+}
+/* header */
+Header{
+    display: flexbox;
+    height: 142px;
+    background-color: black;
+}
+.logo{
+    margin: 7px 0px 0px 150px;
+    display: inline;
+    transition: transform 1s;
+    animation: backInDown 2s 1;
+}
+.mainMenuList{
+    position: absolute;
+    top: 62px;
+    right: 150px;
+    margin: 0;
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style: none;
+    transition: transform 1s;
+    animation: backInRight 2s 1;
+}
+.mainMenuListItem{
+    padding: 0px 35px 0px 35px;
+}
+.mainMenuListItem>a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Ubuntu";
+}
+#Contacts{
+    color: white;
+}
+#Contacts ul{
+    list-style: none;
+    font-size: 20px;
+}
+/* Main */
+#AboutUs{
+    padding: 50px 146px 10px 146px;
+    background-image: url(img/патерны.png);
+    height: 100%;
+}
+#AboutUs div{
+    margin-top: 100px;
+    transition: transform 1s;
+    animation: fadeInUp 2s 1;
+}
+#AboutUs h1{
+    font-family: "Ubuntu";
+    font-size: 50px;
+    color: white;
+}
+#AboutUs p{
+    max-width: 1200px;
+    font-size: 35px;
+    font-family: "Ubuntu";
+    color: white;
+    padding-top: 50px;
+}
+#mainh1{
+    font-family: "Ubuntu";
+    font-size: 60px;
+    color: white;
+}
+/* footer */
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+footer .ContactList{
+    font-size: 30px;
+    font-family: "Ubuntu";
+    list-style: none;
+    margin: 30px 50px 10px 50px;}
+footer .NavigateMenu{
+    font-size: 30px;
+    font-family: "Ubuntu";
+    list-style: none;
+    margin: 30px 50px 10px 50px;
+}
+@media(max-width: 1440px){
+    .logo{
+        margin: 7px 0px 0px 100px;
+    }
+    #AboutUs div{
+        margin-top: 70px;
+    }
+    #AboutUs h1{
+        font-family: "Ubuntu";
+        font-size: 50px;
+        color: white;
+    }
+    #AboutUs p{
+        max-width: 800px;
+        font-size: 25px;
+        color: white;
+        padding-top: 40px;
+    }
+    #mainh1{
+        font-family: "Ubuntu";
+        font-size: 60px;
+        color: white;
+    }
+    .mainMenuList{
+        right: 100px;
+    }
+    .mainMenuListItem{
+        padding: 0px 25px 0px 25px;
+    }
+    footer .ContactList{
+        font-size: 20px;
+    }
+    footer .NavigateMenu{
+        font-size: 20px;
+    }
+}
+@media(max-width: 1200px){
+    #AboutUs div{
+        margin-top: 0px;
+    }
+}
+@media(max-width: 768px){
+    .logo{
+        margin: 7px 0px 0px 30px;
+    }
+    #AboutUs{
+        padding: 50px 25px 10px 16px;
+        background-image: url(img/патерны.png);
+        height: 100%;
+    }
+    #AboutUs h1{
+        font-family: "Ubuntu";
+        font-size: 40px;
+        color: white;
+    }
+    #AboutUs p{
+        margin-right: none;
+        max-width: 1200px;
+        font-size: 20px;
+    }
+    #mainh1{
+        font-family: "Ubuntu";
+        font-size: 60px;
+        color: white;
+    }
+    .mainMenuList{
+        right: 20px;
+    }
+    .mainMenuListItem{
+        padding: 0px 15px 0px 15px;
+    }
+    .mainMenuListItem>a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "Ubuntu";
+    }
+}
+@media(max-width: 420px){
+    Header{
+        height: 102px;
+    }
+    .logo{
+        margin: 7px 0px 0px 10px;
+        width: 80px;
+    }
+    .mainMenuList{
+        right: 50px;
+    }
+    .mainMenuListItem{
+        padding: 0px 5px 0px 5px;
+    }
+    .mainMenuListItem>a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: "Ubuntu";
+    }
+    #AboutUs{
+        padding: 50px 15px 10px 15px;
+        background-image: url(img/патерны.png);
+        height: 100%;
+    }
+    #AboutUs h1{
+        font-family: "Ubuntu";
+        font-size: 30px;
+        color: white;
+    }
+    #AboutUs p{
+        margin-right: none;
+        max-width: 1200px;
+        font-size: 20px;
+    }
+    #mainh1{
+        font-family: "Ubuntu";
+        font-size: 40px;
+        color: white;
+    }
+    footer .ContactList{
+        font-size: 15px;
+        margin: 30px 10px 10px 10px;}
+    footer .NavigateMenu{
+        font-size: 15px;
+        margin: 30px 10px 10px 10px;
+    }
+}

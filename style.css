@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+}
+/* header */
+Header{
+    display: flexbox;
+    height: 142px;
+    background-color: black;
+}
+.logo{
+    margin: 7px 0px 0px 150px;
+    display: inline;
+    transition: transform 1s;
+    animation: backInDown 2s 1;
+}
+.mainMenuList{
+    position: absolute;
+    top: 62px;
+    right: 150px;
+    margin: 0;
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style: none;
+    transition: transform 1s;
+    animation: backInRight 2s 1;
+}
+.mainMenuListItem{
+    padding: 0px 35px 0px 35px;
+}
+.mainMenuListItem>a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Ubuntu";
+}
+#Contacts{
+    color: white;
+}
+#Contacts ul{
+    list-style: none;
+}
+/* Main */
+/* 1 article */
+#NewList{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 20px 118px 20px 118px;
+    background-image: url(img/f_Y2RuLmluY3J1c3NpYS5ydS93cC1jb250ZW50L3VwbG9hZHMvMjAxNy8xMS9pU3RvY2stNTIyNTEzNzQ3LWZyb250LmpwZz9fX2lkPTEwMDYyMQ==\ 1.png);
+    background-size: cover;
+    height: 800px;
+}
+.NewList_h1{
+    font-size: 60px;
+    font-family: "Ubuntu";
+    color: white;
+}
+.NewList_text{
+    font-family: "Ubuntu";
+    font-size: 30px;
+    color:white;
+    max-width: 40vw;
+}
+.NewList_button{
+    background-color:#0017E1;
+    width: 235px;
+    height: 50px;
+    font-size: 30px;
+    font-family: "Ubuntu";
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: "Ubuntu";
+}
+/* 2 article */
+.carousel {
+    position: relative;
+    width: 400px;
+    padding: 10px 40px;
+}
+  
+.carousel img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+    display: block;
+}
+  
+  .arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 47%;     /* располагаем стрелки примерно посередине карусели */
+    padding: 2px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.014);
+    border: 1px solid rgb(255, 255, 255);
+    color: #fff;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .arrow:hover {
+    background-color: rgb(129, 129, 129);
+  }
+  
+  .prev {
+    left: -10px;
+  }
+  
+  .next {
+    right: -10px;
+  }
+  
+  .gallery {
+    width: 400px;
+    overflow: hidden;
+  }
+  
+  .gallery ul {
+    height: 400px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 400ms;
+    font-size: 0;
+  }
+  
+  .gallery li {
+    display: inline-block;
+  }
+/* Carusel */
+#Sale{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-image: url(img/chelovek_hudi_print_158916_3840x2400\ 1.png);
+    background-size: cover;
+    height: 830px;
+    padding: 10px 118px 10px 118px;
+}
+#Sale h1{
+    font-family: "Ubuntu";
+    font-size: 60px;
+    max-width: 55vw;
+    color: white;
+}
+#Sale p{
+
+    font-family: "Ubuntu";
+    font-size: 25px;
+    color: white;
+}
+#Sale button{
+    background-color: #0017E1;
+    width: 380px;
+    height: 50px;
+    font-size: 30px;
+    font-family: "Ubuntu";
+    color: white;
+}
+/* 3 article */
+#AboutUs{
+    padding: 50px 118px 10px 80px;
+    background-image: url(img/патерны.png);
+}
+#AboutUs div{
+    margin-top: 57px;
+}
+.aboutUsArticle_text{
+    max-width: 800px;
+    font-size: 45px;
+    font-family: "Ubuntu";
+    float: left;
+    color: white;
+    margin-right: 400px;
+    padding-top: 100px;
+}
+.aboutUsArticle_image{
+    max-width: 530px;
+}
+/* footer */
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+footer .ContactList{
+    font-size: 20px;
+    font-family: "Ubuntu";
+    list-style: none;
+    margin: 30px 50px 10px 50px;}
+footer .NavigateMenu{
+    font-size: 20px;
+    font-family: "Ubuntu";
+    list-style: none;
+    margin: 30px 50px 10px 50px;
+}
+@media(max-width: 1440px){
+    .logo{
+        margin: 7px 0px 0px 100px;
+    }
+    .NewList_h1{
+        font-size: 50px;
+    }
+    .NewList_text{
+        font-size: 25px;
+    }
+    .NewList_button{
+        width: 210px;
+        height: 40px;
+        font-size: 25px;
+    }
+    #Sale h1{
+        font-size: 50px;
+        max-width: 50vw;
+    }
+    #Sale button{
+        width: 350px;
+        height: 40px;
+        font-size: 25px;
+    }
+    .aboutUsArticle_text{
+        max-width: 600px;
+        font-size: 35px;
+        margin-right: 0px;
+    }
+    .aboutUsArticle_image{
+        max-width: 530px;
+    }
+    .mainMenuList{
+        right: 100px;
+    }
+    .mainMenuListItem{
+        padding: 0px 25px 0px 25px;
+    }
+}
+@media(max-width: 1200px){
+    #AboutUs div{
+        margin-top: 0px;
+    }
+    .aboutUsArticle_image{
+        max-width: 530px;
+    }
+}
+@media(max-width: 768px){
+    .logo{
+        margin: 7px 0px 0px 30px;
+    }
+    .mainMenuList{
+        right: 20px;
+    }
+    .mainMenuListItem{
+        padding: 0px 15px 0px 15px;
+    }
+    .mainMenuListItem>a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "Ubuntu";
+    }
+}
+@media(max-width: 420px){
+    Header{
+        height: 102px;
+    }
+    .logo{
+        margin: 7px 0px 0px 10px;
+        width: 80px;
+    }
+    .mainMenuList{
+        right: 50px;
+    }
+    .mainMenuListItem{
+        padding: 0px 5px 0px 5px;
+    }
+    .mainMenuListItem>a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: "Ubuntu";
+    }
+    #NewList{
+        padding: 50px 25px 50px 25px;
+        height: 400px;
+    }
+    .NewList_h1{
+        font-size: 30px;
+    }
+    .NewList_text{
+        font-family: "Ubuntu";
+        font-size: 20px;
+        color:white;
+        max-width: 60vw;
+    }
+    .NewList_button{
+        width: 135px;
+        height: 30px;
+        font-size: 20px;
+    }
+    #Sale{
+        height: 500px;
+        padding: 10px 25px 10px 25px;
+    }
+    #Sale h1{
+        font-family: "Ubuntu";
+        font-size: 35px;
+        max-width: 60vw;
+        color: white;
+    }
+    #Sale p{
+    
+        font-family: "Ubuntu";
+        font-size: 20px;
+        color: white;
+    }
+    #Sale button{
+        width: 130px;
+        height: 30px;
+        font-size: 20px;
+    }
+    #AboutUs{
+        padding: 50px 25px 10px 25px;
+        background-image: url(img/патерны.png);
+    }
+    #AboutUs div{
+        margin-top: 57px;
+    }
+    .aboutUsArticle_text{
+        max-width: none;
+        font-size: 25px;
+        margin-right: none;
+        padding-top: 10px;
+    }
+    .aboutUsArticle_image{
+        max-width: 270px;
+    }
+    footer .ContactList{
+        font-size: 15px;
+        margin: 30px 10px 10px 10px;}
+    footer .NavigateMenu{
+        font-size: 15px;
+        margin: 30px 10px 10px 10px;
+    }
+}
